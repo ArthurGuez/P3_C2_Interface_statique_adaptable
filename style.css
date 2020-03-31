@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PARTIE HEADER/MASTHEAD */
+
+header {
+    position: relative;
+    display: flex;
+}
+
+#masthead {
+    width: 100%;
+    height: auto;
+}
+
+#logo {
+    position: absolute;
+}
+
+h1 {
+    position: absolute;
+}
+
+/* FIN PARTIE HEADER/MASTHEAD */
+
+#white_back {
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 200vh;
+}
+
+#car_back {
+    background-color: teal;
+    width: 100vw;
+    height: 60vh;
+}
+
+#green_back {
+    background-color: green;
+    width: 100vw;
+    height: 40vh;
+}
+
+footer {
+    background-color: darkblue;
+    width: 100vw;
+    height: 100vh;
+}
