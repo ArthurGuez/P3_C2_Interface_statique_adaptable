@@ -2,35 +2,83 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* PARTIE HEADER/MASTHEAD */
 
 header {
-    position: relative;
-    display: flex;
-}
-
-#masthead {
-    width: 100%;
-    height: auto;
+    background-image: url("images/mastehead.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 125vh;
 }
 
 #logo {
-    position: absolute;
-}
-
-h1 {
-    position: absolute;
+    display: flex;
+    flex-direction: row;
 }
 
 /* FIN PARTIE HEADER/MASTHEAD */
 
+/* PARTIE SUR WHITE BACKGROUND */
+
 #white_back {
     background-color: whitesmoke;
-    width: 100vw;
-    height: 200vh;
 }
+
+#something_new, #five_boxes, #look_details {
+    margin: 10%;
+}
+
+#five_boxes {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+#five_boxes div {
+    padding: 10%;
+}
+
+#pink {
+    background-color: pink;
+}
+
+#purple {
+    background-color: purple;
+}
+
+#ice {
+    background-image: url(images/box-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#sun {
+    background-image: url(images/box-bg-lg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#green {
+    background-color: green;
+}
+
+#the_details {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}
+
+#the_details div {
+    padding: 10% 0%;
+}
+
+/* FIN PARTIE SUR WHITE BACKGROUND */
 
 #car_back {
     background-color: teal;
