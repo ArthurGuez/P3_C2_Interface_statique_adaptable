@@ -1,9 +1,17 @@
+/* PARTIE GLOBALE */
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
+#something_new, #five_boxes, #look_details, #green_back, #buy, footer {
+    padding: 10%;
+}
+
+/* FIN PARTIE GLOBALE */
 
 /* PARTIE HEADER/MASTHEAD */
 
@@ -12,12 +20,34 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 125vh;
+    height: 100vh;
+    color: white;
 }
 
 #logo {
     display: flex;
     flex-direction: row;
+    padding: 2%;
+}
+
+#logo img {
+    height: auto;
+    width: auto;
+}
+
+#logo h1 {
+    font-style: italic;
+    font-weight: normal;
+}
+
+#slogan {
+    width: 50%;
+    height: 50%;
+    padding: 75% 0 0 15%;
+}
+
+#slogan h2 {
+    font-size: 50px;
 }
 
 /* FIN PARTIE HEADER/MASTHEAD */
@@ -28,8 +58,9 @@ header {
     background-color: whitesmoke;
 }
 
-#something_new, #five_boxes, #look_details {
-    margin: 10%;
+#something_new {
+    display: flex;
+    flex-direction: column;
 }
 
 #five_boxes {
@@ -42,36 +73,43 @@ header {
     padding: 10%;
 }
 
+#five_boxes p {
+    font-size: x-small;
+    padding: 3% 0 5% 0;
+}
+
+#five_boxes a {
+    text-decoration: none;
+    color: white;
+}
+
 #pink {
-    background-color: pink;
+    background-color: #e8a0a2;
 }
 
 #purple {
-    background-color: purple;
+    background-color: #5e627f;
 }
 
 #ice {
     background-image: url(images/box-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
 }
 
 #sun {
     background-image: url(images/box-bg-lg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
 }
 
 #green {
-    background-color: green;
+    background-color: #91c39e;
 }
 
 #the_details {
     display: flex;
     flex-direction: column;
-    background-color: red;
 }
 
 #the_details div {
@@ -80,20 +118,86 @@ header {
 
 /* FIN PARTIE SUR WHITE BACKGROUND */
 
+/* PARTIE SUR CAR BACKGROUND */
+
 #car_back {
-    background-color: teal;
-    width: 100vw;
-    height: 60vh;
+    background-image: url(images/full-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
+
+#car_back div {
+    color: white;
+    padding-left: 10%
+}
+
+#car_back h2 {
+    font-size: 54px;
+    width: 60%;
+}
+
+/* FIN PARTIE SUR CAR BACKGROUND */
+
+/* PARTIE REASONS TO GET ONBOARD */
 
 #green_back {
-    background-color: green;
-    width: 100vw;
-    height: 40vh;
+    background-color: #91c39e;
+    height: 100vh;
+    color: white;
 }
 
+#the_reasons {
+    display: flex;
+    flex-direction: column;
+}
+
+#the_reasons h2 {
+    padding: 10% 0%;
+}
+
+#the_reasons p {
+    padding: 8% 0%;
+}
+
+/* FIN PARTIE REASONS TO GET ONBOARD */                 
+
+/* PARTIE BUY */
+
+#buy {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#buy p {
+    padding: 10% 0%;
+}
+
+/* FIN PARTIE BUY */
+
+/* DEBUT PARTIE FOOTER */
+
 footer {
-    background-color: darkblue;
+    background-color: #192431;
     width: 100vw;
     height: 100vh;
+    color: white;
+    font-size: small;
 }
+
+#box_footer_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_links li {
+    list-style-type: none;
+    width: 80%
+}
+
+/* FIN PARTIE FOOTER */
