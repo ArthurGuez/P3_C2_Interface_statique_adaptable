@@ -7,8 +7,20 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-#something_new, #five_boxes, #look_details, #green_back, #buy, footer {
-    padding: 10%;
+#slogan, #something_new, #five_boxes, #look_details, #green_back, #buy, footer {
+    padding: 5% 10%;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+#the_reasons p {
+    padding: 5% 0%;
 }
 
 /* FIN PARTIE GLOBALE */
@@ -16,12 +28,15 @@
 /* PARTIE HEADER/MASTHEAD */
 
 header {
-    background-image: url("images/mastehead.jpg");
+    background-image: url("assets/images/mastehead.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #logo {
@@ -38,29 +53,29 @@ header {
 #logo h1 {
     font-style: italic;
     font-weight: normal;
+    padding-left: 1%;
 }
 
 #slogan {
-    width: 50%;
-    height: 50%;
-    padding: 75% 0 0 15%;
+    width: 55%;
+    padding-bottom: 25%;
 }
 
-#slogan h2 {
-    font-size: 50px;
+#slogan p {
+    font-size: small;
 }
 
 /* FIN PARTIE HEADER/MASTHEAD */
 
 /* PARTIE SUR WHITE BACKGROUND */
 
-#white_back {
-    background-color: whitesmoke;
-}
-
 #something_new {
     display: flex;
     flex-direction: column;
+}
+
+#something_new p {
+    padding-top: 5%;
 }
 
 #five_boxes {
@@ -70,17 +85,19 @@ header {
 }
 
 #five_boxes div {
-    padding: 10%;
+    padding: 8%;
+    font-size: small;
 }
 
 #five_boxes p {
-    font-size: x-small;
-    padding: 3% 0 5% 0;
+    padding-top: 2%;
+    padding-bottom: 5%;
 }
 
 #five_boxes a {
     text-decoration: none;
     color: white;
+    font-weight: bold;
 }
 
 #pink {
@@ -92,13 +109,13 @@ header {
 }
 
 #ice {
-    background-image: url(images/box-bg.jpg);
+    background-image: url(assets/images/box-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #sun {
-    background-image: url(images/box-bg-lg.jpg);
+    background-image: url(assets/images/box-bg-lg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -108,12 +125,16 @@ header {
 }
 
 #the_details {
+    height: 75vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 20%;
+    font-size: 15px;
 }
 
-#the_details div {
-    padding: 10% 0%;
+#the_details h4 {
+    padding: 5% 0%;
 }
 
 /* FIN PARTIE SUR WHITE BACKGROUND */
@@ -121,12 +142,13 @@ header {
 /* PARTIE SUR CAR BACKGROUND */
 
 #car_back {
-    background-image: url(images/full-image.jpg);
+    background-image: url(assets/images/full-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 #car_back div {
@@ -139,6 +161,16 @@ header {
     width: 60%;
 }
 
+#car_back a {
+    text-decoration: none;
+    color: white;
+}
+
+#car_back p {
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
 /* FIN PARTIE SUR CAR BACKGROUND */
 
 /* PARTIE REASONS TO GET ONBOARD */
@@ -149,17 +181,13 @@ header {
     color: white;
 }
 
-#the_reasons {
-    display: flex;
-    flex-direction: column;
-}
-
-#the_reasons h2 {
+#green_back h3 {
     padding: 10% 0%;
 }
 
-#the_reasons p {
-    padding: 8% 0%;
+#the_reasons {
+    display: flex;
+    flex-direction: column;
 }
 
 /* FIN PARTIE REASONS TO GET ONBOARD */                 
@@ -173,9 +201,47 @@ header {
     justify-content: space-evenly;
 }
 
-#buy p {
-    padding: 10% 0%;
+#solo, #team {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 30vh;
 }
+
+.colored_labels {
+    display: inline;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: x-small;
+}
+
+#solo p:nth-of-type(1) {
+    background-color: #e1e2e3;
+}
+
+#team p:nth-of-type(1) {
+    background-color: #b494bf;
+} 
+
+.colored_labels:nth-child(even) {
+    background-color: #90c59a;
+}
+
+.os_logos {
+    display: flex;
+    flex-direction: row;
+}
+
+.os_logos img {
+    width: 6%;
+    height: auto;
+}
+
+/* #c3c4c5 */
 
 /* FIN PARTIE BUY */
 
@@ -183,10 +249,12 @@ header {
 
 footer {
     background-color: #192431;
-    width: 100vw;
-    height: 100vh;
+    height: 80vh;
     color: white;
     font-size: small;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 #box_footer_links {
