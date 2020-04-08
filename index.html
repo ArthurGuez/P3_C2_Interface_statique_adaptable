@@ -16,6 +16,7 @@
             <h2>Picture perfect</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
+        <img src="assets/images/iphone.png" alt="iphone" id="iphone">
     </header>
 
     <main>
@@ -62,7 +63,7 @@
                 </div>
             </div>
 
-            <article id="look_details">
+            <article>
                 <h3>A look at the details</h3>
                 <div id="the_details"> 
                     <div id="web_based">
@@ -118,9 +119,9 @@
 
         <section id="buy">
             <div id="solo">
-                <p class="colored_labels">LEGACY</p>
+                <label class="colored_labels">LEGACY</label>
                 <h3>Go it solo</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                <p class="buy_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
                 <label class="colored_labels">BUY NOW $9</label>
                 <div class="os_logos">
                     <img src="assets/images/apple.svg" alt="Apple logo">
@@ -129,9 +130,9 @@
             </div>
 
             <div id="team">
-                <p class="colored_labels">MOST POPULAR</p>
+                <label class="colored_labels">MOST POPULAR</label>
                 <h3>Team plan</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                <p class="buy_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
                 <label class="colored_labels">BUY NOW $18</label>
                 <div class="os_logos">
                     <img src="assets/images/apple.svg" alt="Apple logo">
@@ -142,22 +143,36 @@
     </main>
 
     <footer>
-        <p>Get in touch</p>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div id="in_touch">
+            <div class="get">
+                <h4>Get in touch</h4>
 
-        <form action="">
-            <label for="email">Stay in touch
-                <input type="email" id="email" name="email">
-                <span>&#10003;</span>
-            </label>
-            <p>We don't send spam. Actually, who are we kidding, we'll spam the shit out of you'r inbox.</p>
-        </form>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <div class="get">
+                <div id="form">
+                    <h4>Stay in touch</h4>
+                    <form action="">
+                        <label for="email">
+                                <div id="one_line">
+                                <input type="email" id="email" name="email">
+                                <button type="submit">
+                                    <span>&#10003;</span>
+                                </button>
+                                </div>
+                        </label>
+                    </form>
+                    <p>We don't send spam. Actually, who are we kidding, we'll spam the shit out of you'r inbox.</p>
+                </div>
+            </div>
+        </div>
 
         <div id="box_footer_links">
             <div class="footer_links">
+                <p>Resources</p>
                 <ul>
-                    <li>Resources</li>
                     <li>Tour</li>
                     <li>Customers</li>
                     <li>Pricing and plans</li>
@@ -167,8 +182,8 @@
             </div>
 
             <div class="footer_links">
+                <p>How To's</p>
                 <ul>
-                    <li>How To's</li>
                     <li>Tour</li>
                     <li>Customers</li>
                     <li>Pricing and Plans</li>
@@ -178,8 +193,8 @@
             </div>
 
             <div class="footer_links">
+                <p>Resources</p>
                 <ul>
-                    <li>Resources</li>
                     <li>Tour</li>
                     <li>Customers</li>
                     <li>Pricing and plans</li>
