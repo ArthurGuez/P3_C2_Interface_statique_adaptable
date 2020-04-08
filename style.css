@@ -90,9 +90,9 @@ header {
 @media screen and (min-width: 1024px) {
     #iphone {
         display: block;
-        width: 40%;
         height: auto;
         position: absolute;
+        width: 40%;
         top: 30%;
         left: 50%;
     }
@@ -343,13 +343,25 @@ header {
 
 /* PARTIE BUY */
 
+#buy h3 {
+    padding: 5% 0;
+}
+
+#buy p {
+    width: 80%;
+}
+
+#solo {
+    padding-bottom: 10%;
+}
+
 .colored_labels {
-    display: inline;
     padding: 10px;
-    color: rgb(247, 247, 247);;
+    color: white;
     text-align: center;
     border-radius: 5px;
     font-weight: bold;
+    border: none;
 }
 
 #solo label:nth-of-type(1) {
@@ -362,6 +374,7 @@ header {
 
 .colored_labels:nth-child(even) {
     background-color: #90c59a;
+    margin: 5% 0;
 }
 
 .os_logos {
@@ -372,7 +385,7 @@ header {
 .os_logos img {
     width: 10%;
     height: auto;
-    padding: 2% 2% 0% 0%;
+    padding: 0% 2% 0% 0%;
 }
 
 @media screen and (min-width: 768px) {
@@ -401,7 +414,7 @@ footer {
     font-size: 11px;
 }
 
-#form {
+#in_touch {
     padding: 4% 0;
 }
 
@@ -451,7 +464,7 @@ label button {
         display: flex;
         flex-direction: row;
     }
-    .get {
+    #get {
         width: 50%;
     }
 }
