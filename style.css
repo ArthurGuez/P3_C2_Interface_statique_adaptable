@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 3.3em;
 }
 
 h3 {
@@ -88,6 +88,10 @@ header {
         width: 40%;
         top: 30%;
         left: 50%;
+    }
+
+    #slogan {
+        width: 68%;
     }
 }
 
@@ -419,7 +423,7 @@ input[type="email"] {
     border: none;
 }
 
-label button {
+#form button {
     display: inline-block;
     background-color: #90c59a;
     width: 10%;
