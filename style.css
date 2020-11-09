@@ -105,8 +105,6 @@ header {
 }
 
 #five_boxes {
-    display: flex;
-    flex-direction: column;
     color: white;
     padding: 10% 0;
 }
